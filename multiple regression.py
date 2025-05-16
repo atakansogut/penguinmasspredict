@@ -21,7 +21,7 @@ penguins.columns=['body_mass_g','bill_length_mm','gender','species']
 #drop missing values
 penguins.dropna(inplace=True)
 #reset index
-penguins = penguins.reset_index(inplace=True,drop=True)
+penguins = penguins.reset_index(drop=True)
 
 #select X and Y variables
 penguins_x = penguins[['bill_length_mm','gender','species']]
